@@ -46,6 +46,10 @@
   padding-inline: var(--button-padding-x, var(--button-padding-x-sm));
   vertical-align: middle;
 
+  &:where(:not([data-disabled])) {
+    background-color: var(--mantine-color-grape-filled);
+  }
+
   &:where([data-block]) {
     display: block;
     width: 100%;
