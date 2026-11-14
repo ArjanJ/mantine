@@ -11,7 +11,7 @@
   --button-height-compact-lg: 34px;
   --button-height-compact-xl: 40px;
 
-  --button-padding-x-xs: 14px;
+  --button-padding-x-xs: var(--mantine-spacing-xl);
   --button-padding-x-sm: 18px;
   --button-padding-x-md: 22px;
   --button-padding-x-lg: 26px;
@@ -57,6 +57,14 @@
 
   &:where([data-with-right-section]) {
     padding-inline-end: calc(var(--button-padding-x) / 1.5);
+  }
+
+  &:where([data-size='xs'][data-with-left-section]) {
+    padding-inline-start: var(--mantine-spacing-xl);
+  }
+
+  &:where([data-size='xs'][data-with-right-section]) {
+    padding-inline-end: var(--mantine-spacing-xl);
   }
 
   &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
