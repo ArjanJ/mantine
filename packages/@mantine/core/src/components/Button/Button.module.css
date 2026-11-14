@@ -59,6 +59,10 @@
     padding-inline-end: calc(var(--button-padding-x) / 1.5);
   }
 
+  &:where(:not([data-disabled])) {
+    background-color: var(--mantine-color-grape-filled);
+  }
+
   &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
     cursor: not-allowed;
     border: 1px solid transparent;
