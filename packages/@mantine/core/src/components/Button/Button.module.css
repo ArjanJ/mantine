@@ -61,6 +61,7 @@
 
   &:where(:not([data-disabled])) {
     padding-inline: var(--mantine-spacing-xl);
+    background-color: var(--mantine-color-grape-filled);
   }
 
   &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
