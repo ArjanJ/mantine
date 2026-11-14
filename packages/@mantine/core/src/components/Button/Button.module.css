@@ -116,6 +116,13 @@
     padding-inline-start: var(--mantine-spacing-xl);
     padding-inline-end: var(--mantine-spacing-xl);
   }
+
+  &:where(
+    [data-size='xs']:not(:hover, :disabled, [data-disabled]),
+    [data-size='xs'][data-loading]
+  ) {
+    background-color: var(--mantine-color-grape-filled);
+  }
 }
 
 .inner {
