@@ -59,6 +59,10 @@
     padding-inline-end: calc(var(--button-padding-x) / 1.5);
   }
 
+  &:where(:not([data-disabled])) {
+    padding-inline: var(--mantine-spacing-xl);
+  }
+
   &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
     cursor: not-allowed;
     border: 1px solid transparent;
